@@ -30,7 +30,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="350dp"
             android:gravity="center"
             android:orientation="vertical"
             android:padding="16dp">
@@ -47,7 +47,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="monospace"
-                android:paddingBottom="16dp"
+                android:paddingBottom="32dp"
                 android:text="Let's take good care of your plant"
                 android:textAlignment="center" />
 
@@ -60,23 +60,25 @@
                 android:padding="8dp"
                 android:text="Sign In"
                 android:textAlignment="center"
-                android:textColor="@color/primary_yellow" />
+                android:textColor="@color/primary_yellow"
+                android:textSize="18sp"/>
 
             <TextView
                 android:id="@+id/tv_sign_up"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="16dp"
                 android:background="@drawable/light_rounded_shape"
                 android:fontFamily="monospace"
                 android:padding="8dp"
                 android:text="Sign Up"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textSize="18sp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="32dp"
                 android:fontFamily="monospace"
                 android:text="Or connect using"
                 android:textStyle="bold" />
@@ -91,7 +93,7 @@
                     android:id="@+id/iv_facebook"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="16dp"
                     android:src="@drawable/facebook" />
 
                 <ImageView
@@ -99,9 +101,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="16dp"
                     android:src="@drawable/google" />
-
 
             </LinearLayout>
 
