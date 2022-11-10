@@ -3,18 +3,18 @@ package com.devlower.vaaz
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.devlower.vaaz.databinding.ActivitySignInBinding
+import com.devlower.vaaz.databinding.ActivitySignUpBinding
 
-class SignInActivity : AppCompatActivity() {
-    private var binding: ActivitySignInBinding? = null
+class SignUpActivity : AppCompatActivity() {
+    private var binding: ActivitySignUpBinding? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivitySignInBinding.inflate(layoutInflater)
+        binding = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding?.root)
 
         binding?.icBackArrow?.setOnClickListener {
-            val intent = Intent(this, LoginActivity::class.java)
+            var intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
 
@@ -23,7 +23,7 @@ class SignInActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        binding?.tvSignIn?.setOnClickListener {
+        binding?.tvSignUp?.setOnClickListener {
             intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
         }

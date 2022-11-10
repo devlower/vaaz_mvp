@@ -16,7 +16,17 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding?.root)
 
         binding?.tvSignIn?.setOnClickListener {
-            val intent = Intent(this, SignInActivity::class.java)
+            var intent = Intent(this, SignInActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding?.tvSignUp?.setOnClickListener {
+            intent = Intent(this, SignUpActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding?.tvSkip?.setOnClickListener {
+            intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
         }
     }
