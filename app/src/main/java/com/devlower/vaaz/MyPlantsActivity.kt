@@ -5,24 +5,19 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.devlower.vaaz.databinding.ActivityHomeBinding
-import com.devlower.vaaz.databinding.ActivityLoginBinding
+import com.devlower.vaaz.databinding.ActivityMyPlantsBinding
 
-class HomeActivity : AppCompatActivity() {
-    private var binding: ActivityHomeBinding? = null
+class MyPlantsActivity : AppCompatActivity() {
+    private var binding: ActivityMyPlantsBinding? = null
 
     @SuppressLint("ClickableViewAccessibility")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityHomeBinding.inflate(layoutInflater)
+        binding = ActivityMyPlantsBinding.inflate(layoutInflater)
         setContentView(binding?.root)
 
         binding?.icBackArrow?.setOnClickListener {
-            var intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
-        }
-
-        binding?.cardMyPlants?.setOnClickListener {
-            var intent = Intent(this, MyPlantsActivity::class.java)
+            var intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
         }
     }
