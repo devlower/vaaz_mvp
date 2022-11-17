@@ -1,11 +1,12 @@
 package com.devlower.vaaz
 
 import android.annotation.SuppressLint
+import android.content.ContentValues.TAG
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import com.devlower.vaaz.databinding.ActivityHomeBinding
-import com.devlower.vaaz.databinding.ActivityLoginBinding
 
 class HomeActivity : AppCompatActivity() {
     private var binding: ActivityHomeBinding? = null
@@ -13,6 +14,11 @@ class HomeActivity : AppCompatActivity() {
     @SuppressLint("ClickableViewAccessibility")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        DataSource.allPlants.forEach {
+            Log.i(TAG, it.name)
+        }
+
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding?.root)
 
