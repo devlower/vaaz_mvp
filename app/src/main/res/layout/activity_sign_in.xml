@@ -55,6 +55,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
                 android:padding="8dp"
                 android:background="@drawable/neutral_rounded_shape"
                 android:hint="Email"
@@ -67,6 +68,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="textPassword"
                 android:padding="8dp"
                 android:background="@drawable/neutral_rounded_shape"
                 android:layout_marginTop="16dp"

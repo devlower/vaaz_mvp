@@ -17,10 +17,14 @@
         <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/layout/activity_home.xml" value="0.264" />
         <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/layout/activity_my_plants.xml" value="0.264" />
+        <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/layout/activity_search.xml" value="0.264" />
         <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/layout/activity_sign_in.xml" value="0.264" />
         <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/layout/activity_sign_up.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/layout/list_item.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/layout/plant_item.xml" value="0.264" />
+        <entry key="..\:/Users/tuann/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_list_item_1.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tuann/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_list_item_2.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

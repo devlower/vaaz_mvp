@@ -1,9 +1,9 @@
 package com.devlower.vaaz
 
-class DataSource<Plant> {
+class DataSource {
     companion object {
 
-        val allPlants: List<com.devlower.vaaz.Plant> = listOf(
+        val allPlants: List<Plant> = listOf(
             Plant(
                 "Amaryllis",
                 "Hippeastrum",
@@ -145,5 +145,15 @@ class DataSource<Plant> {
             ),
 
             ).sortedBy { it.name }
+
+        fun allPlantsToArray(): Array<String> {
+            var tmp: Array<String> = arrayOf()
+
+            allPlants.forEach {
+                tmp += it.name
+            }
+
+            return tmp
+        }
     }
 }

@@ -1,8 +1,8 @@
 package com.devlower.vaaz
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.devlower.vaaz.databinding.ActivitySignInBinding
 
 class SignInActivity : AppCompatActivity() {

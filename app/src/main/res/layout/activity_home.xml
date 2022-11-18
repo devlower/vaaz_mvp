@@ -74,7 +74,7 @@
             android:layout_marginVertical="8dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/card_02"
+                android:id="@+id/card_products"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/light_rounded_shape"
@@ -86,9 +86,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/products"
-                    app:layout_constraintBottom_toBottomOf="@id/card_02"
-                    app:layout_constraintLeft_toLeftOf="@id/card_02"
-                    app:layout_constraintTop_toTopOf="@id/card_02" />
+                    app:layout_constraintBottom_toBottomOf="@id/card_products"
+                    app:layout_constraintLeft_toLeftOf="@id/card_products"
+                    app:layout_constraintTop_toTopOf="@id/card_products" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -99,7 +99,7 @@
                     android:textColor="@color/primary_green"
                     android:textSize="30sp"
                     android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="@id/card_02"
+                    app:layout_constraintBottom_toBottomOf="@id/card_products"
                     app:layout_constraintLeft_toRightOf="@id/iv_products"
                     app:layout_constraintTop_toTopOf="@id/iv_products" />
 

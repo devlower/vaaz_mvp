@@ -55,6 +55,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="textCapWords"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/neutral_rounded_shape"
                 android:fontFamily="monospace"
@@ -67,6 +68,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
                 android:background="@drawable/neutral_rounded_shape"
                 android:fontFamily="monospace"
                 android:hint="Email"
@@ -78,6 +80,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="textPassword"
                 android:layout_marginTop="16dp"
                 android:background="@drawable/neutral_rounded_shape"
                 android:fontFamily="monospace"
@@ -90,6 +93,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="textPassword"
                 android:layout_marginTop="16dp"
                 android:background="@drawable/neutral_rounded_shape"
                 android:fontFamily="monospace"

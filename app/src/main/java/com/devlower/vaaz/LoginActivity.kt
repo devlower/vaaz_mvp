@@ -2,8 +2,8 @@ package com.devlower.vaaz
 
 import android.annotation.SuppressLint
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.devlower.vaaz.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
