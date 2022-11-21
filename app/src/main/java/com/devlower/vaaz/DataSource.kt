@@ -144,6 +144,16 @@ class DataSource {
                 0.50
             ),
 
+            Plant(
+                "Aluminum Plant",
+                "Pilea cadierei ",
+                "With the aliminum plants easy going nature and lack of any real growing problems, it will bush out from its container in leaves of silver and green for up to four years before it dies. The leaves are normally squat and broad, measuring up to 12 inches (30 cm) long and up to 8 inches (21 cm) wide.",
+                "https://www.houseplantsexpert.com/wp-content/uploads/2022/09/aluminum_plant.jpg",
+                19.00,
+                0.45
+            ),
+
+
             ).sortedBy { it.name }
 
         fun allPlantsToArray(): Array<String> {
