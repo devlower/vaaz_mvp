@@ -21,8 +21,11 @@ class SearchActivity : AppCompatActivity() {
         setContentView(binding?.root)
 
         binding?.icBackArrow?.setOnClickListener {
-            var intent = Intent(this, HomeActivity::class.java)
-            startActivity(intent)
+//            var intent = Intent(this, HomeActivity::class.java)
+//            intent.putExtra("a", 123)
+//            intent.putExtra("pranta", Plant("a", "", "", "", 0.00, 0.00))
+//            startActivity(intent)
+            finish()
         }
 
         val plantsAdapter: ArrayAdapter<String> = ArrayAdapter(
@@ -30,7 +33,7 @@ class SearchActivity : AppCompatActivity() {
         )
 
         binding?.plantList?.setOnItemClickListener { adapterView, view, i, l ->
-            Toast.makeText(this, DataSource.allPlantsToArray()[i], Toast.LENGTH_LONG).show()
+            Toast.makeText(this, DataSource.allPlants.firstOrNull { it.name == DataSource.allPlantsToArray()[i] }.toString(), Toast.LENGTH_LONG).show()
         }
         binding?.plantList?.adapter = plantsAdapter
 
