@@ -3,6 +3,7 @@ package com.devlower.vaaz
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.devlower.vaaz.databinding.ActivityMyPlantsBinding
 
@@ -19,6 +20,10 @@ class MyPlantsActivity : AppCompatActivity() {
             var intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
         }
+
+        val plant = intent.getSerializableExtra("plant") as Plant
+        Toast.makeText(this, plant.toString(), Toast.LENGTH_SHORT).show()
+
     }
 
     override fun onDestroy() {

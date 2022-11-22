@@ -29,9 +29,7 @@ class SearchActivity : AppCompatActivity() {
         )
 
         binding?.plantList?.setOnItemClickListener { _, _, i, _ ->
-//            var intent = Intent(this, PlantDetailsActivity::class.java)
-//            intent.putExtra("plant_index", i)
-            var intent = Intent(this, PlantDetailsActivity::class.java)
+            val intent = Intent(this, PlantDetailsActivity::class.java)
 
             intent.putExtra("plant", DataSource.allPlants[i])
 

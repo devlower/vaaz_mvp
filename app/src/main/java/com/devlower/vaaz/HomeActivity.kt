@@ -23,17 +23,17 @@ class HomeActivity : AppCompatActivity() {
         setContentView(binding?.root)
 
         binding?.icBackArrow?.setOnClickListener {
-            var intent = Intent(this, LoginActivity::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
 
         binding?.cardMyPlants?.setOnClickListener {
-            var intent = Intent(this, MyPlantsActivity::class.java)
+            val intent = Intent(this, MyPlantsActivity::class.java)
             startActivity(intent)
         }
 
         binding?.btnAdd?.setOnClickListener {
-            var intent = Intent(this, SearchActivity::class.java)
+            val intent = Intent(this, SearchActivity::class.java)
             startActivity(intent)
         }
     }
