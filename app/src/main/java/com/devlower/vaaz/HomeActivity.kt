@@ -13,27 +13,27 @@ class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        var a = intent.getIntExtra("a", 0)
-        var pranta = intent.getSerializableExtra("pranta")
-
-        println(a)
-        println(pranta)
+//        var a = intent.getIntExtra("a", 0)
+//        var pranta = intent.getSerializableExtra("pranta")
+//
+//        println(a)
+//        println(pranta)
 
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding?.root)
 
         binding?.icBackArrow?.setOnClickListener {
-            var intent = Intent(this, LoginActivity::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
 
         binding?.cardMyPlants?.setOnClickListener {
-            var intent = Intent(this, MyPlantsActivity::class.java)
+            val intent = Intent(this, MyPlantsActivity::class.java)
             startActivity(intent)
         }
 
         binding?.btnAdd?.setOnClickListener {
-            var intent = Intent(this, SearchActivity::class.java)
+            val intent = Intent(this, SearchActivity::class.java)
             startActivity(intent)
         }
     }
