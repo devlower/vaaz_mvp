@@ -37,8 +37,7 @@ class PlantDetailsActivity : AppCompatActivity() {
                 .setPositiveButton("Yes") { _: DialogInterface, _: Int ->
                     //add a plant
                     val intent = Intent(this, MyPlantsActivity::class.java)
-                    intent.putExtra("plant", plant)
-
+                    SplashActivity.plants += plant
                     startActivity(intent)
                 }.setNegativeButton("No") { _, _ ->
                     //do nothing
