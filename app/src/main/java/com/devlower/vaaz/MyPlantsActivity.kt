@@ -3,8 +3,9 @@ package com.devlower.vaaz
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.devlower.vaaz.databinding.ActivityMyPlantsBinding
 
 class MyPlantsActivity : AppCompatActivity() {
@@ -22,8 +23,15 @@ class MyPlantsActivity : AppCompatActivity() {
         }
 
         val plant = intent.getSerializableExtra("plant") as Plant
-        Toast.makeText(this, plant.toString(), Toast.LENGTH_SHORT).show()
+        
+        SplashActivity.plants += plant
 
+        val recyclerView = findViewById<RecyclerView>(R.id.rv_plant_cards)
+        val layoutManager = GridLayoutManager(this, 3)
+
+        recyclerView.layoutManager = layoutManager
+
+        recyclerView.adapter = PlantAdapter(SplashActivity.plants)
     }
 
     override fun onDestroy() {
