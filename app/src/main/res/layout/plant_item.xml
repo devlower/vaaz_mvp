@@ -16,8 +16,8 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_image"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:backgroundTint="@color/transparent"
             app:cardCornerRadius="200dp"
             app:layout_constraintBottom_toTopOf="@id/tv_title"
