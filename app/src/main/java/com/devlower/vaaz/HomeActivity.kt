@@ -13,12 +13,6 @@ class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-//        var a = intent.getIntExtra("a", 0)
-//        var pranta = intent.getSerializableExtra("pranta")
-//
-//        println(a)
-//        println(pranta)
-
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding?.root)
 

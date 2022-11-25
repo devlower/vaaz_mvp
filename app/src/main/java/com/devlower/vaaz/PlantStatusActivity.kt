@@ -1,7 +1,7 @@
 package com.devlower.vaaz
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 
 class PlantStatusActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
