@@ -18,6 +18,9 @@
         android:theme="@style/Theme.Vaaz"
         tools:targetApi="31">
         <activity
+            android:name=".PlantStatusActivity"
+            android:exported="false" />
+        <activity
             android:name=".PlantDetailsActivity"
             android:exported="false" />
         <activity
