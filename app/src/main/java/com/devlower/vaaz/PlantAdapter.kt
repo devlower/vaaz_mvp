@@ -10,6 +10,9 @@ import com.bumptech.glide.Glide
 
 class PlantAdapter(private var items: List<Plant>) :
     RecyclerView.Adapter<PlantAdapter.ViewHolder>() {
+
+    var onItemClick: ((Plant) -> Unit)? = null
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.plant_item, parent, false)
 
@@ -20,6 +23,9 @@ class PlantAdapter(private var items: List<Plant>) :
         val item = items[position]
 
         holder.bindView(item)
+        holder.itemView.setOnClickListener {
+            onItemClick?.invoke(item)
+        }
     }
 
     override fun getItemCount() = items.size

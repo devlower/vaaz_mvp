@@ -37,9 +37,14 @@ class MyPlantsActivity : AppCompatActivity() {
             recyclerView.visibility = View.VISIBLE
             val layoutManager = GridLayoutManager(this, 3)
 
+            val adapter = PlantAdapter(SplashActivity.plants)
+            recyclerView.adapter = adapter
+            adapter.onItemClick = {
+                val intent = Intent(this, PlantStatusActivity::class.java)
+                intent.putExtra("plant", it)
+                startActivity(intent)
+            }
             recyclerView.layoutManager = layoutManager
-
-            recyclerView.adapter = PlantAdapter(SplashActivity.plants)
         }
     }
 

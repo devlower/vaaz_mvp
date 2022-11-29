@@ -49,4 +49,10 @@ class PlantDetailsActivity : AppCompatActivity() {
             finish()
         }
     }
+
+    override fun onDestroy() {
+        super.onDestroy()
+
+        binding = null
+    }
 }
