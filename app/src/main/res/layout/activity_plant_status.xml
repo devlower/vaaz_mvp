@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlantStatusActivity"
+    android:background="@color/primary_yellow">
+
+    <ImageView
+        android:id="@+id/ic_back_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back_arrow_dark"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_green"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_green_corner"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/card_image"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="-50dp">
+
+        <TextView
+            android:id="@+id/tv_plant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Agapanto"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/cl_green"
+            android:layout_marginTop="50dp"
+            android:fontFamily="monospace"
+            android:textColor="@color/primary_yellow"
+            android:textStyle="bold"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_humidity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="Humidity"
+            android:textColor="@color/primary_yellow"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent="0.5"
+            tools:layout_editor_absoluteY="158dp"
+            app:layout_constraintTop_toTopOf="@id/tv_humidity_status"
+            app:layout_constraintBottom_toBottomOf="@id/tv_humidity_status"/>
+
+        <TextView
+            android:id="@+id/tv_humidity_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="monospace"
+            android:text="Ideal"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/primary_yellow"
+            android:textSize="20sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_humidity"
+            app:layout_constraintTop_toBottomOf="@id/tv_plant_name"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <TextView
+            android:id="@+id/tv_temperature"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="Temperature"
+            android:textColor="@color/primary_yellow"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent="0.5"
+            tools:layout_editor_absoluteY="158dp"
+            app:layout_constraintTop_toTopOf="@id/tv_temperature_status"
+            app:layout_constraintBottom_toBottomOf="@id/tv_temperature_status"/>
+
+        <TextView
+            android:id="@+id/tv_temperature_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="monospace"
+            android:text="Ideal"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/primary_yellow"
+            android:textSize="20sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_humidity"
+            app:layout_constraintTop_toBottomOf="@id/tv_humidity"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <TextView
+            android:id="@+id/tv_overall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="Overall Status"
+            android:textColor="@color/primary_yellow"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent="0.5"
+            tools:layout_editor_absoluteY="158dp"
+            app:layout_constraintTop_toTopOf="@id/tv_overall_status"
+            app:layout_constraintBottom_toBottomOf="@id/tv_overall_status"/>
+
+        <TextView
+            android:id="@+id/tv_overall_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="monospace"
+            android:text="Healthy"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/primary_yellow"
+            android:textSize="20sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_humidity"
+            app:layout_constraintTop_toBottomOf="@id/tv_temperature"
+            app:layout_constraintWidth_percent="0.5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_image"
+        android:layout_marginTop="16dp"
+        android:layout_width="213dp"
+        android:layout_height="213dp"
+        android:backgroundTint="@color/transparent"
+        app:cardCornerRadius="200dp"
+        app:layout_constraintTop_toBottomOf="@id/ic_back_arrow"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_plant_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@drawable/img_error" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/mini_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mini_logo_light"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

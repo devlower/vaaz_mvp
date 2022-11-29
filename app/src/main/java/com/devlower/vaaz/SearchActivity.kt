@@ -34,7 +34,6 @@ class SearchActivity : AppCompatActivity() {
             intent.putExtra("plant", DataSource.allPlants[i])
 
             startActivity(intent)
-//            Toast.makeText(this, DataSource.allPlants.firstOrNull { it.name == DataSource.allPlantsToArray()[i] }.toString(), Toast.LENGTH_LONG).show()
         }
         binding?.plantList?.adapter = plantsAdapter
 
@@ -52,5 +51,11 @@ class SearchActivity : AppCompatActivity() {
                 return false
             }
         })
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+
+        binding = null
     }
 }
