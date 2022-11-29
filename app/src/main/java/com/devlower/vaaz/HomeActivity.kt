@@ -21,6 +21,11 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding?.cardProducts?.setOnClickListener {
+            val intent = Intent(this, ProductsActivity::class.java)
+            startActivity(intent)
+        }
+
         binding?.cardMyPlants?.setOnClickListener {
             val intent = Intent(this, MyPlantsActivity::class.java)
             startActivity(intent)
