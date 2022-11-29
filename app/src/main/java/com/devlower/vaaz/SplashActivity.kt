@@ -9,6 +9,8 @@ class SplashActivity : AppCompatActivity() {
     companion object {
         var plants: List<Plant> = arrayListOf()
 //        var plants: List<Plant> = DataSource.allPlants
+        private const val CAMERA_PERMISSION_CODE = 1
+        const val CAMERA = 2
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
