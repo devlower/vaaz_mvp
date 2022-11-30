@@ -28,12 +28,25 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        binding?.cardScan?.setOnClickListener{
-            if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED){
+        binding?.icNotification?.setOnClickListener {
+            val intent = Intent(this, NotificationActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding?.cardScan?.setOnClickListener {
+            if (ContextCompat.checkSelfPermission(
+                    this,
+                    Manifest.permission.CAMERA
+                ) == PackageManager.PERMISSION_GRANTED
+            ) {
                 val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-                startActivityForResult(intent, SplashActivity.CAMERA)
-            }else{
-                ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.CAMERA), SplashActivity.CAMERA)
+                startActivityForResult(intent, DataSource.CAMERA)
+            } else {
+                ActivityCompat.requestPermissions(
+                    this,
+                    arrayOf(Manifest.permission.CAMERA),
+                    DataSource.CAMERA
+                )
             }
         }
 
@@ -59,12 +72,16 @@ class HomeActivity : AppCompatActivity() {
         grantResults: IntArray
     ) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        if(requestCode == SplashActivity.CAMERA){
-            if(grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED){
+        if (requestCode == DataSource.CAMERA) {
+            if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-                startActivityForResult(intent, SplashActivity.CAMERA)
-            }else{
-                Toast.makeText(this, "Oops you just denied the permission for camera. Don't worry you can allow it in the settings.", Toast.LENGTH_LONG).show()
+                startActivityForResult(intent, DataSource.CAMERA)
+            } else {
+                Toast.makeText(
+                    this,
+                    "Oops you just denied the permission for camera. Don't worry you can allow it in the settings.",
+                    Toast.LENGTH_LONG
+                ).show()
             }
         }
     }
@@ -72,7 +89,7 @@ class HomeActivity : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if(resultCode == Activity.RESULT_OK){
-            if(requestCode == SplashActivity.CAMERA){
+            if (requestCode == DataSource.CAMERA) {
                 //TODO: Implement a machine learning to recognize the image taken with plants
                 val intent = Intent(this, HomeActivity::class.java)
                 startActivity(intent)

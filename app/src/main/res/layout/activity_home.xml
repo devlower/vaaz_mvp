@@ -181,14 +181,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingRight="8dp"
-        android:src="@drawable/ic_user"
-        app:layout_constraintRight_toLeftOf="@id/ic_notification" />
-
-
-    <ImageView
         android:id="@+id/mini_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

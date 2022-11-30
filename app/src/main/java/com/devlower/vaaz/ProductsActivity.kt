@@ -24,7 +24,7 @@ class ProductsActivity : AppCompatActivity() {
         val recyclerView = findViewById<RecyclerView>(R.id.rv_product_cards)
         val layoutManager = LinearLayoutManager(this)
 
-        val adapter = ProductAdapter(DataSourceProducts.allProducts)
+        val adapter = ProductAdapter(DataSource.allProducts)
         recyclerView.adapter = adapter
         recyclerView.layoutManager = layoutManager
     }

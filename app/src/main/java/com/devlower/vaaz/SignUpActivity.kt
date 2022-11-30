@@ -27,7 +27,6 @@ class SignUpActivity : AppCompatActivity() {
             intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
         }
-
     }
 
     override fun onDestroy() {

@@ -37,7 +37,11 @@ class PlantDetailsActivity : AppCompatActivity() {
                 .setPositiveButton("Yes") { _: DialogInterface, _: Int ->
                     //add a plant
                     val intent = Intent(this, MyPlantsActivity::class.java)
-                    SplashActivity.plants += plant
+                    DataSource.plants += plant
+                    DataSource.allNotifications += Notification(
+                        plant,
+                        "Water Tank Status: LOW\n\nPlease reload the tank with water"
+                    )
                     startActivity(intent)
                 }.setNegativeButton("No") { _, _ ->
                     //do nothing
