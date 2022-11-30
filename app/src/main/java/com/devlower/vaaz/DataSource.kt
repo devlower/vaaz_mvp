@@ -603,7 +603,7 @@ class DataSource {
         )
 
         var allNotifications: List<Notification> = arrayListOf()
-        var plants: List<Plant> = arrayListOf()
+        var plants: List<Plant?> = arrayListOf()
         const val CAMERA = 2
 
         fun allPlantsToArray(): Array<String> {
