@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/primary_green"
     android:padding="16dp"
-    tools:context=".MyPlantsActivity">
+    tools:context=".NotificationAdapter">
 
     <ImageView
         android:id="@+id/ic_back_arrow"
@@ -19,13 +19,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         android:fontFamily="monospace"
-        android:text="My Garden"
+        android:text="Notifications"
         android:textColor="@color/primary_yellow"
-        android:textSize="20sp" />
-
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -38,21 +37,21 @@
         app:layout_constraintTop_toBottomOf="@id/ic_back_arrow">
 
         <TextView
-            android:id="@+id/tv_no_plants"
+            android:id="@+id/tv_no_notifications"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="monospace"
-            android:text="You don't have any plants yet"
+            android:text="You don't have any notifications yet"
             android:textColor="@color/light_green"
             android:textSize="16sp"
             android:textStyle="bold" />
 
         <ImageView
-            android:id="@+id/iv_no_plants"
+            android:id="@+id/iv_no_notifications"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="70dp"
-            android:src="@drawable/no_plant_icon" />
+            android:src="@drawable/no_notifications" />
 
     </LinearLayout>
 
@@ -68,13 +67,13 @@
         app:layout_constraintVertical_bias="0.0">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_plant_cards"
-            android:visibility="gone"
+            android:id="@+id/rv_notification_cards"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             tools:itemCount="50"
-            tools:listitem="@layout/plant_item" />
+            tools:listitem="@layout/notification_item" />
 
     </ScrollView>
 
@@ -82,11 +81,11 @@
         android:id="@+id/mini_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/mini_logo_light"
-        app:layout_constraintTop_toBottomOf="@id/sv_cards"
         android:layout_marginTop="16dp"
+        android:src="@drawable/mini_logo_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sv_cards" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

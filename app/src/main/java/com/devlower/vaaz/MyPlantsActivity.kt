@@ -14,7 +14,6 @@ import com.devlower.vaaz.databinding.ActivityMyPlantsBinding
 class MyPlantsActivity : AppCompatActivity() {
     private var binding: ActivityMyPlantsBinding? = null
 
-
     @SuppressLint("ClickableViewAccessibility")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,7 +26,7 @@ class MyPlantsActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        if (SplashActivity.plants.isNotEmpty()) {
+        if (DataSource.plants.isNotEmpty()) {
             val tvNoPlants = findViewById<TextView>(R.id.tv_no_plants)
             tvNoPlants.visibility = View.GONE
             val ivNoPlants = findViewById<ImageView>(R.id.iv_no_plants)
@@ -37,7 +36,7 @@ class MyPlantsActivity : AppCompatActivity() {
             recyclerView.visibility = View.VISIBLE
             val layoutManager = GridLayoutManager(this, 3)
 
-            val adapter = PlantAdapter(SplashActivity.plants)
+            val adapter = PlantAdapter(DataSource.plants)
             recyclerView.adapter = adapter
             adapter.onItemClick = {
                 val intent = Intent(this, PlantStatusActivity::class.java)

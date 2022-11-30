@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.182" />
         <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/drawable/bg_green_corner.xml" value="0.1775" />
+        <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/drawable/card_frame_light.xml" value="0.182" />
         <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/drawable/dark_rounded_shape.xml" value="0.1775" />
         <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/drawable/ic_add_circle_dark.xml" value="0.115" />
         <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/drawable/ic_add_circle_light.xml" value="0.115" />
@@ -11,14 +13,19 @@
         <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/drawable/ic_back_arrow.xml" value="0.115" />
         <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/drawable/ic_back_arrow_dark.xml" value="0.115" />
         <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/drawable/ic_back_arrow_light.xml" value="0.173" />
+        <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/drawable/ic_bullet_point.xml" value="0.182" />
+        <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/drawable/ic_launcher_background.xml" value="0.182" />
         <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/drawable/ic_notification.xml" value="0.1435" />
+        <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/drawable/ic_notification_light.xml" value="0.182" />
         <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/drawable/ic_user.xml" value="0.1435" />
+        <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/drawable/ic_user_light.xml" value="0.182" />
         <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/drawable/light_rounded_shape.xml" value="0.131" />
         <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/drawable/neutral_rounded_shape.xml" value="0.115" />
         <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/drawable/rounded_shape.xml" value="0.131" />
         <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/layout/activity_home.xml" value="0.264" />
         <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/layout/activity_my_plants.xml" value="0.264" />
+        <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/layout/activity_notification.xml" value="0.264" />
         <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/layout/activity_plant_details.xml" value="0.264" />
         <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/layout/activity_plant_status.xml" value="0.264" />
         <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/layout/activity_products.xml" value="0.25416666666666665" />
@@ -28,8 +35,11 @@
         <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/layout/dialog.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/layout/list_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/layout/notification_item.xml" value="0.264" />
         <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/layout/plant_item.xml" value="0.264" />
         <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/layout/product_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/menu/menu.xml" value="0.19342053111375346" />
+        <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/menu/menu_item.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/tuann/AndroidProjects/vaaz/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.136" />
         <entry key="..\:/Users/tuann/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_list_item_1.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/tuann/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_list_item_2.xml" value="0.25416666666666665" />
