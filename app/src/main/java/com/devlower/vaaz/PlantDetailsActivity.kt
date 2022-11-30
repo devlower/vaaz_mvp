@@ -19,17 +19,19 @@ class PlantDetailsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityPlantDetailsBinding.inflate(layoutInflater)
         setContentView(binding?.root)
-        
-        val plant = intent.getSerializableExtra("plant") as Plant
+
+        val plantName = intent.getSerializableExtra("plant_name") as String
 
         val tvPlantName: TextView = findViewById(R.id.tv_plant_name)
         val tvPlantDescription: TextView = findViewById(R.id.tv_plant_description)
         val ivPlantImg: ImageView = findViewById(R.id.iv_plant_img)
 
-        tvPlantName.text = plant.name + " (" + plant.sciName + ")"
-        tvPlantDescription.text = plant.description
+        val plant = DataSource.allPlants.find { plant -> plant.name == plantName }
 
-        Glide.with(this).load(plant.linkImg).into(ivPlantImg)
+        tvPlantName.text = plant?.name + " (" + plant?.sciName + ")"
+        tvPlantDescription.text = plant?.description
+
+        Glide.with(this).load(plant?.linkImg).into(ivPlantImg)
 
         binding?.efbAdd?.setOnClickListener {
             val builder = AlertDialog.Builder(this)

@@ -3,8 +3,10 @@ package com.devlower.vaaz
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.ArrayAdapter
 import android.widget.SearchView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.devlower.vaaz.databinding.ActivitySearchBinding
 
@@ -30,11 +32,13 @@ class SearchActivity : AppCompatActivity() {
 
         binding?.plantList?.setOnItemClickListener { _, _, i, _ ->
             val intent = Intent(this, PlantDetailsActivity::class.java)
+            val plantName = plantsAdapter.getItem(i)
 
-            intent.putExtra("plant", DataSource.allPlants[i])
+            intent.putExtra("plant_name", plantName)
 
             startActivity(intent)
         }
+
         binding?.plantList?.adapter = plantsAdapter
 
         binding?.svSearch?.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
