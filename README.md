@@ -15,7 +15,7 @@
 
 #### With *Vaaz* you will have access to your plant's healthy status, receive notifications when their water tank needs to be reloaded and even suggest an environment change if it's temperature is not in a good range.
 
-###### *Vaaz* is a Interdisciplinary Academic Project for a course of Computer Science Degree at *Pontifícia Universidade Católica de Minas Gerais* - Campus *Poços de Caldas*
+###### *Vaaz* is an Interdisciplinary Academic Project for a course of Computer Science Degree at *Pontifícia Universidade Católica de Minas Gerais* - Campus *Poços de Caldas*
 
 [Kotlin for Android](https://kotlinlang.org/docs/android-overview.html)
 
